@@ -66,12 +66,79 @@ Rekomendasi: Gunakan pada pair volatil seperti **XAUUSD, GBPJPY, EURUSD** di tim
 - Sistem ini sangat kompleks – gunakan dengan **money management yang ketat**.
 - Bukan holy grail – tetap lakukan analisis manual sebagai confluence.
 
+# Advanced Swing Master Pro v3.0 – Professional Swing Trading Indicator
+
+![MT5 Indicator](https://img.shields.io/badge/Platform-MetaTrader%205-blue)  
+![Version](https://img.shields.io/badge/Version-3.00-brightgreen)  
+![Advanced](https://img.shields.io/badge/Type-Advanced%20Swing%20%7C%205--Factor%20Matrix-orange)  
+![License](https://img.shields.io/badge/License-Free%20for%20Personal%20Use-red)
+
+**Advanced Swing Master Pro** adalah indikator MetaTrader 5 premium untuk trader swing yang menggabungkan **deteksi swing adaptif**, **validasi entry 5-faktor**, dan **manajemen risiko dinamis** dalam satu dashboard profesional.
+
+Dibuat khusus untuk memberikan **high-probability setup** dengan confluence multi-timeframe dan scoring berbasis data.
+
+## Fitur Utama
+
+- **Adaptive Fractal Swing Detection** (Major/Minor) dengan volume & ATR validation
+- **5-Factor Entry Matrix**:
+  - Trend Alignment (ADX + DI + EMA)
+  - Momentum (RSI + MACD + Divergence)
+  - Volume Spike Confirmation
+  - Volatility Squeeze (Bollinger Bands)
+  - Market Structure (HH/HL/LL/LH + S/R + Fibonacci)
+- **Multi-Timeframe Confluence** otomatis
+- **Dynamic Risk Management**:
+  - Position sizing berdasarkan % risk
+  - Optimal SL berdasarkan swing terdekat
+  - TP1/TP2/TP3 dengan R:R ratio
+- **Professional On-Chart Dashboard** menampilkan:
+  - Swing analysis
+  - Entry matrix scoring (dengan checkmarks)
+  - Total confidence (stars)
+  - Risk levels & position size
+  - Market context (ADX, RSI, ATR, Volume)
+- **Visual Elements**:
+  - Swing arrows (major/minor)
+  - Connecting swing lines
+  - Entry signal arrows
+  - SL/TP horizontal lines
+  - Optional volume profile
+
+## Cara Install
+
+1. Download file `.ex5` atau source `.mq5` dari repository ini.
+2. Buka MT5 → File → Open Data Folder → MQL5 → Indicators
+3. Paste file ke folder tersebut
+4. Restart MT5 atau refresh Navigator
+5. Drag **Advanced Swing Master Pro v3.0** ke chart favoritmu
+
+**Rekomendasi Pair & TF**: EURUSD, GBPUSD, XAUUSD di M15–H4
+
+## Input Parameters Utama
+
+| Group                  | Parameter                   | Default | Deskripsi |
+|------------------------|-----------------------------|---------|-----------|
+| Swing Detection        | InpSwingLookback            | 5       | Jumlah bar untuk deteksi swing |
+|                        | InpMinSwingATR              | 1.0     | Minimum swing size (x ATR) |
+| Entry Validation       | InpMinValidationScore       | 70.0    | Minimum total score untuk signal |
+|                        | InpMinADX                   | 25.0    | Minimum ADX untuk trending |
+| Risk Management        | InpRiskPercent              | 1.0     | Risk per trade (%) |
+|                        | InpTP1Ratio / TP2 / TP3     | 1.5 / 2.5 / 3.5 | Take Profit ratio |
+| Visual                 | InpShowDashboard            | true    | Tampilkan dashboard utama |
+|                        | InpShowSwingLines           | true    | Garis penghubung swing |
+
+## Keyboard Shortcuts (saat indikator aktif)
+
+- **D** → Toggle dashboard on/off
+- **E** → Export current trade setup ke file .txt
+- **R** → Refresh chart
+
 ## Credit & Support
 
 Dibuat oleh **M4DI~UciH4**  
 GitHub: https://github.com/RizkyEvory  
 
-Jika kamu terkesan dengan indikator ini, beri ⭐ di repository!  
-Feedback, saran, atau bug report sangat dihargai.
+Jika kamu suka dengan indikator ini, beri ⭐ di repository!  
+Feedback & saran improvement sangat dihargai.
 
-Semoga tradingmu semakin presisi & profit konsisten di tahun 2025! 🌌🚀💎
+Semoga tradingmu semakin akurat dan profit konsisten di tahun 2025! 🚀💰
